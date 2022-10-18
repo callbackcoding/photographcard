@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(43, 42, 42);
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 425px;
+    width: 100%;
+    position: relative;
+}
+
+
+.card{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border: 5px solid white;
+    overflow: hidden;
+    transition: 1s all ease;
+    z-index: 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+
+}
+.card img{
+    height: 210px;
+    width: 200px;
+    transform: scale(1.8,1.1);
+    transition: 1s all ease;
+}
+
+.card h2, .card p {
+   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 7px;
+    text-align: center;
+}
+
+.card h2{
+    font-size: 20px;
+    color: rgb(90, 89, 89);
+
+}
+
+.card p {
+    color: rgb(241, 42, 75);
+    font-size: 15px;
+}
+.card img:hover{
+    height: 180px;
+    transform: scale(1.5,1.1);
+
+}
+
+
+.card:hover{
+    height: 240px !important;
+}
+
+
+.card2{
+    background-color: white;
+    height: 200px;
+    width: 210px;
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+}
+
+.card:hover ~ .card2{
+    transform: rotate(16deg);
+    transition: 1s;
+    height: 220px;
+}
+
+
+.card3{
+    background-color: white;
+    height: 200px;
+    width: 210px;
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+
+}
+
+.card:hover ~ .card3{
+    transform: rotate(9deg);
+    transition: 1s;
+    height: 220px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
